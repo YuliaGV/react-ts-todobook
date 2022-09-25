@@ -40,11 +40,11 @@ export const TodoItem = ({todo}:props) => {
         </div>
         <div>{todo.description}</div>
         <div>
-          <IconButton aria-label="update" color="primary">
+          <IconButton aria-label="update" style= {{ color: '#040454'  }}>
                 <MdEdit
                   onClick={() => setIsEditing(!isEditing)} />
           </IconButton>
-          <IconButton aria-label="delete" color="primary">
+          <IconButton aria-label="delete"  style= {{ color: '#040454'  }}>
               <MdDeleteOutline
                 onClick={() => deleteTodo(todo.id)} />
           </IconButton>

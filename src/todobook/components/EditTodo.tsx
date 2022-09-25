@@ -69,6 +69,7 @@ export const EditTodo = ({todo}:props) => {
                 endIcon={<MdSend/>}
                 type="submit"
                 onClick={handleSubmit}
+                style= {{ backgroundColor: '#040454'  }}
               >
                 Update
               </Button>
