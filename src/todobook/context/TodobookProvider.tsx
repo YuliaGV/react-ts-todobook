@@ -12,16 +12,20 @@ const storedValues = localStorage.getItem("todoList");
 if(storedValues) {
     INITIAL_STATE =  {todoList: JSON.parse(storedValues)};
 }else{
+    let date = new Date();
+
     INITIAL_STATE = {
         todoList: [
             {
              id: '1',
              description: 'Start to use ToDoBook',
+             date: date.toLocaleDateString(),
              completed: true
             },
             {
             id: '2',
             description: 'Be cool',
+            date: date.toLocaleDateString(),
             completed: true
             },
         ] 

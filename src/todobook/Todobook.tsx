@@ -17,10 +17,10 @@ export const Todobook = () => {
             <img src={Logo} alt='Logo' / >
             <Box sx={{ flexGrow: 1 }}>
               <Grid container spacing={2}>
-                  <Grid item xs={12} md={6}>
+                  <Grid item xs={12} md={5}>
                     <Form />
                   </Grid>
-                  <Grid item xs={12} md={6}>
+                  <Grid item xs={12} md={7}>
                     <TodoList />
                   </Grid>
               </Grid>

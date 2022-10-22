@@ -25,10 +25,12 @@ export const Form = () => {
     if (formValues.description.trim().length <= 1) {
         return;
     }
+    let date = new Date();
 
     const newTodo  = {
         id: String(new Date().getTime()),
         description: formValues.description,
+        date: date.toLocaleDateString(),
         completed: false
     };
 

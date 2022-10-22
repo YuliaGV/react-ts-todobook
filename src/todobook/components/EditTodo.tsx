@@ -35,7 +35,8 @@ export const EditTodo = ({todo}:props) => {
     const newTodo  = {
         id: todo.id,
         description: formValues.description,
-        completed: todo.completed
+        completed: todo.completed,
+        date: todo.date
     };
 
     updateTodo(newTodo);
